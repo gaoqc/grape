@@ -1,0 +1,39 @@
+<ehcache xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
+	xsi:noNamespaceSchemaLocation="ehcache.xsd"  
+	updateCheck="false" monitoring="autodetect"  
+	name="ims"
+	dynamicConfig="true">  
+	<diskStore path="d:/test/"/>
+	<defaultCache  
+		maxElementsInMemory="20"  
+		eternal="false"  
+		overflowToDisk="false"  
+		timeToIdleSeconds="1800"  
+		timeToLiveSeconds="1800">  
+	</defaultCache>  
+      
+	<cache name="bean.Person"  
+		maxElementsInMemory="0"  
+		eternal="true"  
+		timeToIdleSeconds="1800"  
+		timeToLiveSeconds="1800"  
+		memoryStoreEvictionPolicy="LRU"  
+		overflowToDisk="false"
+		
+		copyOnWrite="true"
+		copyOnRead="true"
+		 
+		>
+    	   
+		<searchable >
+		 
+			<searchAttribute name="name" />
+			<searchAttribute name="age" />
+			<searchAttribute name="birth" />
+			<searchAttribute name="boy" />
+	 
+		</searchable>
+  
+    
+	</cache>     
+</ehcache>  
