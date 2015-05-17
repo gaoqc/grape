@@ -3,17 +3,14 @@
  */
 package tools.print;
 
-import java.net.URL;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-import bean.Children;
-import bean.Person;
-import tools.string.StringUtil;
-import tools.time.TimeUtil;
-import ch.qos.logback.classic.LoggerContext;
-import ch.qos.logback.core.util.Loader;
-import ch.qos.logback.core.util.StatusPrinter;
 import static java.lang.System.out;
+
+import java.net.URL;
+
+import org.slf4j.Logger;
+
+import tools.string.StringUtil;
+import ch.qos.logback.core.util.Loader;
 
 /**
  * @Description:
@@ -126,21 +123,4 @@ public class TLogger
     {
         logger.error(concat(prefix, msgArr));
     }
-
-    public static void main(String[] args)
-    {
-        p(Person.class.isAssignableFrom(Children.class));
-       p(String.class.isAssignableFrom(Person.class));
-     
-    }
-    private static void p(Object obj){
-        out.println(obj);
-    }
-
-    private void get()
-    {
-        URL url = Loader.getClassLoaderOfObject(this).getResource("logbak.xml");
-        System.out.println(url.toString());
-    }
-
 }

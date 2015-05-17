@@ -8,7 +8,6 @@ public class SpringInterceptor implements MethodInterceptor
 {
     private static TLogger logger =new TLogger(SpringInterceptor.class);
 
-    @Override
     public Object invoke(MethodInvocation invocation) throws Throwable
     {
         logger.info(invocation.getMethod().getName()+"    begin");
