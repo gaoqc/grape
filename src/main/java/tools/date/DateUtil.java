@@ -1,6 +1,5 @@
 package tools.date;
 
-import java.io.FileNotFoundException;
 import java.sql.Timestamp;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -8,19 +7,21 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
+
 import tools.print.TLogger;
 
 /**
  * @Description: 定义日期相关的公用方法
- * @Company: Asiainfo-Linkage Technologies(China),Inc. Hangzhou
- * @Author wuyj
+ * @Company:
+ * @Author gaoqc
  * @Date 2011-7-2
- * @Date 2012-10-22 zengxr cache the format template and default expire date
  */
 public class DateUtil
 {
     public static final String DATE_FORMAT_YYYYMMDDHHMMSS = "yyyyMMddHHmmss";
+    public static final String YYYYMMDDHHMMSS = "yyyyMMddHHmmss";
     public static final String DATE_FORMAT_YYYYMMDDHHMMSS_ORACLE = "yyyymmddHH24miss";
+    public static final String YYYYMMDDHHMMSS_ORACLE = "yyyymmddHH24miss";
     public static final String DATE_FORMAT_YYYYMMDDHHMM = "yyyyMMddHHmm";
     public static final String DATE_FORMAT_YYYYMMDDHH = "yyyyMMddHH";
     public static final String DATE_FORMAT_YYYYMMDD = "yyyyMMdd";
