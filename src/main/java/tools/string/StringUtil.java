@@ -1,10 +1,16 @@
 package tools.string;
+
+
 /**
 * 字符串工具类
 * @author gaoqc5
 **/
 public class StringUtil
 {
+	public  boolean Test(){
+		return true;
+		
+	}
     public static boolean isEmpty(Object obj){
         return null==obj||"".equals(obj.toString().trim());
     }
