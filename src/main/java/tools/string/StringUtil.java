@@ -1,5 +1,7 @@
 package tools.string;
-
+/**
+* 字符串工具类
+**/
 public class StringUtil
 {
     public static boolean isEmpty(Object obj){
