@@ -1,6 +1,7 @@
 package tools.string;
 /**
 * 字符串工具类
+* @author gaoqc5
 **/
 public class StringUtil
 {
