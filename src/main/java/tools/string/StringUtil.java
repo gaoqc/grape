@@ -4,6 +4,7 @@ package tools.string;
 /**
 * 字符串工具类
 * @author gaoqc5
+* @date 2015-5-18
 **/
 public class StringUtil
 {
