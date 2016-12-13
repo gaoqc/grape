@@ -418,7 +418,7 @@ public class DateUtil
     /**
      * 把Date转成mdb要的秒数
      * 
-     * @author wuyj 2013-3-29
+     * @author gaoqc 2013-3-29
      * @param validDate
      * @return
      */

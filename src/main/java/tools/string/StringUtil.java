@@ -8,10 +8,9 @@ package tools.string;
 **/
 public class StringUtil
 {
-	public  boolean Test(){
-		return true;
-		
-	}
+    public  boolean Test(){
+	return true;
+    }
     public static boolean isEmpty(Object obj){
         return null==obj||"".equals(obj.toString().trim());
     }
